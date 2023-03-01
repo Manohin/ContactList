@@ -35,36 +35,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUI-9Z-SSI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1131" y="-39"/>
-        </scene>
-        <!--Детали-->
-        <scene sceneID="Pcs-PL-x60">
-            <objects>
-                <tableViewController id="lOq-Js-Lv5" customClass="DetailsTableViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="GhB-RP-g4B">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="detailPerson" id="n3X-l4-5fD">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n3X-l4-5fD" id="UC2-Jr-XDM">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="lOq-Js-Lv5" id="DPj-ki-Wtb"/>
-                            <outlet property="delegate" destination="lOq-Js-Lv5" id="dQn-QB-ohU"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Детали" image="person.circle.fill" catalog="system" id="kKq-mb-g4s"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oyJ-z5-5C5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1906" y="-39"/>
+            <point key="canvasLocation" x="395" y="-39"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Dj7-Ik-T9i">
@@ -75,37 +46,16 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="j92-m3-tUF" kind="relationship" relationship="rootViewController" id="whw-du-XIA"/>
+                        <segue destination="LTG-pb-FiH" kind="relationship" relationship="rootViewController" id="neK-Bn-Tfu"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJI-PR-oCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-376" y="-39"/>
         </scene>
-        <!--Контакты-->
-        <scene sceneID="Peh-nw-4C9">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="j92-m3-tUF" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Контакты" id="gL8-pM-ojw"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7dp-Oq-foQ">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="LTG-pb-FiH" kind="relationship" relationship="viewControllers" id="OKJ-1c-BA7"/>
-                        <segue destination="lOq-Js-Lv5" kind="relationship" relationship="viewControllers" id="oC6-TF-j0p"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="leE-lU-9gv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="360" y="-39"/>
-        </scene>
     </scenes>
     <resources>
         <image name="person.circle" catalog="system" width="128" height="123"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

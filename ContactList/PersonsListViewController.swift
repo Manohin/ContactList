@@ -9,37 +9,10 @@ import UIKit
 
 class PersonsListViewController: UITableViewController {
 
-    
     var personsList = Person.getPerson()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let tabBarVC = segue.destination as? UITabBarController else { return }
-        
-        guard let viewControllers = tabBarVC.viewControllers else { return }
-        viewControllers.forEach { viewController in
-            if let detailVC = viewController as? DetailsTableViewController {
-                detailVC.persons = personsList
-            }
-        }
-        
-    }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        
-        1
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return personsList.count
