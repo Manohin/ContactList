@@ -31,7 +31,7 @@ extension SecondPersonsListViewController {
         let person = personsList[indexPath.section]
         
         content.text = indexPath.row == 0 ? "Телефон: " + person.phoneNumber : "Email: " + person.emailAddress
-        content.image = indexPath.row == 0 ? UIImage(systemName: "phone") : UIImage(systemName: "phone.circle")
+        content.image = indexPath.row == 0 ? UIImage(systemName: "phone") : UIImage(systemName: "mail")
         
         cell.contentConfiguration = content
         return cell
