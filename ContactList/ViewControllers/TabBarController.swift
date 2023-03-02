@@ -14,7 +14,9 @@ final class TabBarController: UITabBarController {
         
         get(persons: Person.getPerson())
     }
-    
+}
+
+extension TabBarController {
     private func get(persons: [Person]) {
         viewControllers?.forEach { viewController in
             if let personsListVC = viewController as? PersonsListViewController {
@@ -27,3 +29,5 @@ final class TabBarController: UITabBarController {
         }
     }
 }
+
+

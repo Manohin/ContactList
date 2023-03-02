@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Контакты2-->
+        <!--Контакты-->
         <scene sceneID="ZY0-ec-Kqs">
             <objects>
                 <tableViewController id="x0C-oz-bVY" customClass="SecondPersonsListViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,7 +31,7 @@
                             <outlet property="delegate" destination="x0C-oz-bVY" id="fPK-AU-aqx"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Контакты2" image="person.circle.fill" catalog="system" id="dLc-cK-Rjh"/>
+                    <tabBarItem key="tabBarItem" title="Контакты" image="person.circle.fill" catalog="system" id="dLc-cK-Rjh"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5v8-u2-hgx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,24 +79,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="UcF-81-gWr">
-                                <rect key="frame" x="16" y="223" width="361" height="52.666666666666686"/>
+                                <rect key="frame" x="16" y="223" width="361" height="68"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="4sX-ZX-UIZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="25" height="52.666666666666664"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="4sX-ZX-UIZ">
+                                        <rect key="frame" x="0.0" y="2.3333333333333393" width="25" height="63.666666666666657"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="73M-lS-wiZ">
                                                 <rect key="frame" x="0.0" y="0.99999999999999822" width="25" height="19"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dzr-e4-ebH">
-                                                <rect key="frame" x="0.0" y="34" width="25" height="17.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="45" width="25" height="17.333333333333336"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="25" id="h62-EL-xyn"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Wyn-TO-rlr">
-                                        <rect key="frame" x="31" y="0.33333333333334281" width="330" height="52"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wyn-TO-rlr">
+                                        <rect key="frame" x="31" y="0.0" width="330" height="68"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZMN-YW-Tbf">
                                                 <rect key="frame" x="0.0" y="0.0" width="48" height="24"/>
@@ -105,7 +105,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DHz-hb-hfu">
-                                                <rect key="frame" x="0.0" y="28" width="48" height="24"/>
+                                                <rect key="frame" x="0.0" y="44" width="48" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>

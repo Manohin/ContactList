@@ -15,26 +15,25 @@ final class PersonsListViewController: UITableViewController {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         guard let detailVC = segue.destination as? DetailViewController else { return }
         detailVC.person = personsList[indexPath.row]
-        
     }
-    
+}
+
+extension PersonsListViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "detail", sender: nil)
     }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        personsList.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "person", for: indexPath)
+        var content = cell.defaultContentConfiguration()
+        let person = personsList[indexPath.row]
+        content.text = person.fullName
+        cell.contentConfiguration = content
+        return cell
+    }
 }
-        
-        extension PersonsListViewController {
-            override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-                personsList.count
-            }
-            
-            override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "person", for: indexPath)
-                var content = cell.defaultContentConfiguration()
-                let person = personsList[indexPath.row]
-                content.text = person.fullName
-                cell.contentConfiguration = content
-                return cell
-            }
-        }
 
