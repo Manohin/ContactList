@@ -26,7 +26,14 @@ struct Person {
         let emailAddresses = DataStore().emailAddress.shuffled()
         
         for index in 0..<names.count {
-            persons.append(Person(name: names[index], surname: surnames[index], phoneNumber: phoneNumbers[index], emailAddress: emailAddresses[index]))
+            persons.append(
+                Person(
+                name: names[index],
+                surname: surnames[index],
+                phoneNumber: phoneNumbers[index],
+                emailAddress: emailAddresses[index]
+                )
+            )
         }
         return persons
     }
