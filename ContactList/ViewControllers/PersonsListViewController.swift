@@ -7,27 +7,21 @@
 
 import UIKit
 
-class PersonsListViewController: UITableViewController {
+final class PersonsListViewController: UITableViewController {
     
-    var personsList = Person.getPerson()
-    
+    var personsList: [Person]!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         guard let detailVC = segue.destination as? DetailViewController else { return }
         detailVC.person = personsList[indexPath.row]
-        guard let viewControllers = tabBarController?.viewControllers else { return }
-        viewControllers.forEach { viewController in
-            if let secondPersonVC = viewController as? SecondPersonListViewController {
-                secondPersonVC.persons = personsList
-            }
-        }
+        
     }
-            override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-                self.performSegue(withIdentifier: "detail", sender: nil)
-            }
-            
-        }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "detail", sender: nil)
+    }
+}
         
         extension PersonsListViewController {
             override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,3 +37,4 @@ class PersonsListViewController: UITableViewController {
                 return cell
             }
         }
+

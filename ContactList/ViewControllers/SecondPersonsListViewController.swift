@@ -1,5 +1,5 @@
 //
-//  SecondPersonListViewController.swift
+//  SecondPersonsListViewController.swift
 //  ContactList
 //
 //  Created by Alexey Manokhin on 02.03.2023.
@@ -7,31 +7,21 @@
 
 import UIKit
 
-class SecondPersonListViewController: UITableViewController {
+final class SecondPersonsListViewController: UITableViewController {
 
-    var persons: [Person]!
+    var personsList: [Person]!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
 
     // MARK: - Table view data source
 
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        persons[section].fullName
+        personsList[section].fullName
     }
     
-    
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
-        persons.count
+        personsList.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,7 +33,7 @@ class SecondPersonListViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "secondPerson", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        let person = persons[indexPath.section]
+        let person = personsList[indexPath.section]
         
         content.text = indexPath.row == 0 ? "Телефон: " + person.phoneNumber : "Email: " + person.emailAddress
         
