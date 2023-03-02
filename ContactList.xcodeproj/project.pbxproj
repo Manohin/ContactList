@@ -16,6 +16,7 @@
 		8A3E6CEC29AFE9B300A4DF6A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3E6CEB29AFE9B300A4DF6A /* Person.swift */; };
 		8A3E6CEE29AFEAD900A4DF6A /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3E6CED29AFEAD900A4DF6A /* DataStore.swift */; };
 		8ABE8DB329B09BAE004DA805 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE8DB229B09BAE004DA805 /* DetailViewController.swift */; };
+		8ABE8DBC29B0B600004DA805 /* SecondPersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE8DBB29B0B600004DA805 /* SecondPersonListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8A3E6CEB29AFE9B300A4DF6A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		8A3E6CED29AFEAD900A4DF6A /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		8ABE8DB229B09BAE004DA805 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8ABE8DBB29B0B600004DA805 /* SecondPersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPersonListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				8A3E6CD529AFE88C00A4DF6A /* SceneDelegate.swift */,
 				8A3E6CD929AFE88C00A4DF6A /* Main.storyboard */,
 				8ABE8DB229B09BAE004DA805 /* DetailViewController.swift */,
+				8ABE8DBB29B0B600004DA805 /* SecondPersonListViewController.swift */,
 				8A3E6CE929AFE98A00A4DF6A /* PersonsListViewController.swift */,
 				8A3E6CDC29AFE88E00A4DF6A /* Assets.xcassets */,
 				8A3E6CDE29AFE88E00A4DF6A /* LaunchScreen.storyboard */,
@@ -168,6 +171,7 @@
 				8A3E6CEC29AFE9B300A4DF6A /* Person.swift in Sources */,
 				8ABE8DB329B09BAE004DA805 /* DetailViewController.swift in Sources */,
 				8A3E6CEE29AFEAD900A4DF6A /* DataStore.swift in Sources */,
+				8ABE8DBC29B0B600004DA805 /* SecondPersonListViewController.swift in Sources */,
 				8A3E6CD629AFE88C00A4DF6A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
