@@ -12,7 +12,7 @@ final class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        get(persons: Person.getPerson())
+        get(persons: Person.getPersons())
     }
 }
 
@@ -21,10 +21,8 @@ extension TabBarController {
         viewControllers?.forEach { viewController in
             if let personsListVC = viewController as? PersonsListViewController {
                 personsListVC.personsList = persons
-            } else {
-                if let secondListVC = viewController as? SecondPersonsListViewController {
-                    secondListVC.personsList = persons
-                }
+            } else if let secondListVC = viewController as? SecondPersonsListViewController {
+                secondListVC.personsList = persons
             }
         }
     }

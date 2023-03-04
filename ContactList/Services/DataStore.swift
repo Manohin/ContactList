@@ -5,7 +5,7 @@
 //  Created by Alexey Manokhin on 01.03.2023.
 //
 
-class DataStore {
+final class DataStore {
     let names = [
         "Алексей",
         "Сергей",
