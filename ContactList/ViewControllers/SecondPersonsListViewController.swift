@@ -40,6 +40,7 @@ extension SecondPersonsListViewController {
         }
         
         cell.contentConfiguration = content
+        
         return cell
     }
     
