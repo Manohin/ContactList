@@ -6,7 +6,6 @@
 //
 
 final class DataStore {
-    
     static let shared = DataStore()
     
     let names = [
@@ -87,5 +86,4 @@ final class DataStore {
     ]
     
     private init() {}
-    
 }
